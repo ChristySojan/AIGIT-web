@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGIT - Natural Language Git</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+        header {
+            background: #161b22;
+            color: white;
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #c9d1d9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+            line-height: 2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #2ea043;
+            text-decoration: none;
+        }
+        #full-docs {
+            display: none;
+            margin-top: 20px;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #1f6feb;
+        }
+        h1, h2 {
+            color: #58a6ff;
+            text-align: left;
+        }
+        footer {
+            background: #161b22;
+            color: #8b949e;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+        .section {
+            width: 80%;
+            max-width: 1000px;
+            margin-top: 20px;
+            margin-left: 50px;
+            background: #161b22;
+            line-height: 2;
+            margin-bottom: 50px;
+        }
+        
+        #docs a:hover {
+            color: #ffffff;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        #license a:hover {
+            text-decoration: none;
+            color: #1f6feb;
+        }
+        #contact a:hover {
+            text-decoration: none;
+            color: #1f6feb;
+        }
+        code {
+            background-color: rgb(62, 61, 59);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="3.1.jpg" alt="AIGIT Logo" class="logo">
+            <span class="nav-title"><h2>AIGIT</h2></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#license">License</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    
+    <div class="container" id="about">
+        <h1>AIGIT</h1>
+        <p>AIGIT is an advanced AI-powered interface for Git that allows developers to interact with Git repositories using natural language commands. It simplifies version control by removing the need to memorize complex Git commands and enhances productivity by enabling a more intuitive workflow.</p>
+        <p>With AIGIT, users can perform tasks such as committing changes, creating branches, merging repositories, and resolving conflicts just by describing their actions in plain English. This makes it an excellent tool for beginners and professionals alike.</p>
+    </div>
+    
+    <div class="container" id="download">
+        <h1>Download AIGIT</h1>
+        <p>Download the latest version of AIGIT and start using AI-driven Git operations.</p>
+        <p><strong>Version:</strong> 1.0.0</p>
+        <p><strong>Supported Platform:</strong> Windows</p>
+        <a href="https://github.com/ChristySojan/AIGIT/releases/latest/download/AIGIT.exe" download class="btn">Download for Windows</a>
+    </div>
+    
+    <div class="container" id="docs">
+        <h1>Documentation</h1>
+        <p>Welcome to the AIGIT documentation! Here you'll find detailed guides on installation, setup, and usage.</p>
+        <h1>Installation & Setup</h1>
+            <div class="section">
+                <h2>Prerequisites</h2>
+                <ul>
+                    <li>Windows</li>
+                    <li>Git installed on the system</li>
+                    <li>Internet connection for AI processing</li>
+                </ul>
+                <h2>Installation Steps</h2>
+                <p>Follow these steps to install and set up AIGIT on your Windows system:</p>
+                <h3>Step 1: Download the AIGIT Executable</h3>
+                <ul>
+                    <li>Visit the official AIGIT website.</li>
+                    <li>Download the AIGIT executable file (.exe) to your system.</li>
+                </ul>
+                <h3>Step 2: Add AIGIT to the System Path</h3>
+                <ul>
+                    <li>Identify the location where the AIGIT executable is downloaded or moved (e.g., C:\Program Files\AIGIT\aigit.exe).</li>
+                    <li>Press <code>Win + R</code>, type <code>sysdm.cpl</code>, and press <code>Enter</code>.</li>
+                    <li>Navigate to the Advanced tab and click on Environment Variables.</li>
+                    <li>In the System Variables section, find and select Path, then click Edit.</li>
+                    <li>Click New, then paste the path of the AIGIT executable directory (e.g., C:\Program Files\AIGIT\).</li>
+                    <li>Click OK to save the changes and exit.</li>
+                </ul>
+                <h3>Step 3: Create a Shortcut Command for AIGIT</h3>
+                <p>To use aigit as a command without typing the full path each time, follow these steps:</p>
+                <ul>
+                    <li>Open Command Prompt (<code>Win + R</code>, type <code>cmd</code>, and press <code>Enter</code>).</li>
+                    <li>Run the following command to create a shortcut alias:<br>
+                    <pre><code>doskey aigit=C:\Program Files\AIGIT\aigit.exe $*</code></pre></li>
+                    <li>This will allow you to run <code>aigit</code> from any terminal session.</li>
+
+                </ul>
+            </div>
+        <h2>Basic Commands</h2>
+        <div class="section">
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Natural Language Command</th>
+                    <th>Equivalent Git Command</th>
+                </tr>
+                <tr>
+                    <td><code>aigit initialize a new repository</code></td>
+                    <td><code>git init</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit clone the repository from GitHub &lt;URL&gt;</code></td>
+                    <td><code>git clone &lt;URL&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit check the status of my repo</code></td>
+                    <td><code>git status</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit add all changes</code></td>
+                    <td><code>git add .</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit commit with message first commit</code></td>
+                    <td><code>git commit -m "Initial commit"</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit push to GitHub</code></td>
+                    <td><code>git push origin main</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit create a new branch called 'feature'</code></td>
+                    <td><code>git branch feature</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit switch to branch 'feature'</code></td>
+                    <td><code>git checkout feature</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit merge feature into main</code></td>
+                    <td><code>git merge feature</code></td>
+                </tr>
+                <tr>
+                    <td><code>aigit pull latest changes</code></td>
+                    <td><code>git pull origin main</code></td>
+                </tr>
+            </table>
+        </div>
+        <a href="dex.html" class="btn">Read Full Documentation</a>
+    </div>
+
+    <div class="container" id="license">
+        <h1>License</h1>
+        <p>AIGIT is proprietary software and is licensed, not sold. By using AIGIT, you agree to comply with the terms of the AIGIT Software License Agreement.</p>
+        <h2>Key License Terms:</h2>
+        <ul>
+            <li>You are granted a non-exclusive, non-transferable, and revocable license to use AIGIT for personal or business purposes.</li>
+            <li>You may not modify, reverse-engineer, distribute, sublicense, or sell the Software.</li>
+            <li>The Software is provided "as is", without any warranties, and the Licensor is not liable for any damages arising from its use.</li>
+            <li>This license may be terminated if the terms are violated, requiring you to delete all copies of AIGIT.</li>
+        </ul>
+        <p>For the full AIGIT Software License Agreement, please refer to the <a href="license.html">official documentation</a> or contact us at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aigit2025@gmail.com" target="_blank">aigit2025@gmail.com</a></p>
+    </div>
+    
+    <div class="container" id="contact">
+        <h1>Contact</h1>
+        <p>If you have any questions, feedback, or need support, feel free to reach out to us.</p>
+        <p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aigit2025@gmail.com" target="_blank">aigit2025@gmail.com</a></p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 AIGIT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
